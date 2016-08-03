@@ -1,5 +1,5 @@
 --- gamess.2014.12/ddi/compddi	2015-01-15 06:49:05.000000000 -0800
-+++ patch-files/compddi	2015-09-24 21:58:45.237940690 -0700
++++ patch-files/compddi	2016-08-03 16:11:54.350687290 -0700
 @@ -1,4 +1,4 @@
 -#!/bin/csh
 +#!/bin/csh -f
@@ -24,6 +24,15 @@
  #
  #     high end machines are just hardwired as follows.  Don't change them.
  #
+@@ -77,7 +77,7 @@
+ #
+ #        It is OK if these values are larger than your system!
+ #
+-set MAXCPUS=32
++set MAXCPUS=64
+ set MAXNODES=1024
+ #
+ #      you might want to bump MAXCPUS or MAXNODES to match your XT
 @@ -616,7 +616,7 @@
  
       switch ($FORTRAN)

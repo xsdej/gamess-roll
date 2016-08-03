@@ -115,6 +115,7 @@ build: $(SRC_DIRS)
 	perl -pe 's/^.UNX/    /' $(SOURCE_DIR)/tools/actvte.code > \
 	  $(SOURCE_DIR)/tools/actvte.f
 	patch $(SOURCE_DIR)/ddi/compddi patch-files/compddi.patch
+	patch $(SOURCE_DIR)/ddi/ddi_base.h patch-files/ddi_base.h.patch
 	patch $(SOURCE_DIR)/comp patch-files/comp.patch
 	patch $(SOURCE_DIR)/compall patch-files/compall.patch
 	patch $(SOURCE_DIR)/lked patch-files/lked.patch
