@@ -1,11 +1,11 @@
 --- gamess.2014.12/ddi/src/ddi_base.h	2014-09-12 12:43:28.000000000 -0700
-+++ patch-files/ddi_base.h	2016-08-03 16:14:26.130297191 -0700
++++ patch-files/ddi_base.h	2016-08-03 18:53:48.206883441 -0700
 @@ -58,7 +58,7 @@
     Access control parameters
  \* ------------------------- */
   # define DDI_WRITE_LOCK     1
 - # define DDI_FULL_LOCK   1000
-+ # define DDI_FULL_LOCK  50000
++ # define DDI_FULL_LOCK  16000
  
   # define DDI_READ_ACCESS    DDI_WRITE_LOCK 
   # define DDI_WRITE_ACCESS   DDI_FULL_LOCK
